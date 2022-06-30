@@ -14,18 +14,14 @@
 }
 
 .column-one-fourth {
-  display: flex;
+  flex-basis: calc(100% / 4);+
 }
 
 .column-one-third {
-  display: flex;
   flex-basis: 33%;
-  flex-direction: column;
 }
 
 .column-two-third {
-  display: flex;
-  flex-direction: column;
   flex-basis: 66%;
 }
 
