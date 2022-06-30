@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(25 150 218 / 25500%);
+}
+
+.container {
+  /* max-width: 800px; */
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+
+.column-thirds {
+  width: 33%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.column-full {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.icon {
+  background-color: rgb(255 255 255 / 25500%);
+  border-radius: 100px;
+  padding: 1.5rem;
+  width: 110px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: rgb(255 255 255 / 25500%);
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  color: rgb(221 221 221 / 25500%);
+}
+
+h2 {
+  font-size: 24px;
+}
