@@ -42,14 +42,15 @@ p {
   flex-wrap: wrap;
 }
 
-.column-wrap {
+.column-half {
   display: flex;
-  width: 50%;
+  max-width: 50%;
   padding: 10px 25px;
 }
 
-.column-half {
+.column-third {
   margin-top: -25px;
+  width: 33%;
 }
 
 button {
