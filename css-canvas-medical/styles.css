@@ -1,0 +1,274 @@
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-hero {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+.nav-link {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #a0a0a0;
+  padding: 0 1.2rem;
+}
+
+.nav-blue {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #294464;
+  margin: 0 1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 5.5rem;
+  border-bottom: 2px solid #f1f2f4;
+}
+
+.column-one-thirds {
+  width: 33%;
+  display: flex;
+  justify-content: left;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.column-two-thirds {
+  width: 66%;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* hero section */
+
+h1 {
+  line-height: 3rem;
+  font-family: "Tiempos Headline", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.7rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #6e6e6e;
+}
+
+button {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: white;
+  background-color: #294464;
+  padding: 1rem 2.7rem;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+}
+
+.background-image {
+  margin: 4rem 0;
+
+  /* height: 45vh; */
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 20.5%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.text-white {
+  color: white;
+}
+
+.left-padding {
+  padding-left: 4rem;
+}
+
+.padding-top-bottom {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+/* .align-left {
+  align-items: center;
+} */
+
+/* clinics section */
+
+.column-full {
+  width: 100%;
+  color: #6e6e6e;
+}
+
+h2 {
+  line-height: 2rem;
+  font-family: "Tiempos Headline", serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+.light-grey-bg {
+  background-color: #fafafa;
+}
+
+.locations {
+  display: flex;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.padding-two {
+  padding: 2rem;
+}
+
+.padding-four {
+  padding: 2rem 4rem;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: right;
+}
+
+.small-p {
+  font-size: 0.8rem;
+  color: #6e6e6e;
+  line-height: 0;
+  padding: 0;
+}
+
+.small-button {
+  font-size: 1em;
+  color: white;
+  background-color: #294464;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  height: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.call-to-action {
+  font-family: "Tiempos Headline", serif;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+/* footer section */
+
+.dark-gray-background {
+  background-color: #525351;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.footer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-link {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  padding: 0.3rem 0;
+}
+
+.second-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-right {
+  justify-content: right;
+}
+
+.footer-title {
+  text-transform: uppercase;
+}
+
+.email-link {
+  text-decoration: none;
+  color: white;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-grey {
+  color: #525351;
+}
+
+.line-break {
+  inline-size: 200px;
+  overflow-wrap: break-word;
+}
