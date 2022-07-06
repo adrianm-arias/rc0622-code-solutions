@@ -1,0 +1,54 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-full {
+  width: 100%;
+}
+
+h2 {
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h3 {
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+p {
+  font-family: Barlow, sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+img {
+  width: 100%;
+}
+
+.column-one-fourth {
+  width: calc(100% / 4);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+
+.padding-top-one {
+  padding-top: 0.8rem;
+}
+
+.flex-row {
+  display: flex;
+}
