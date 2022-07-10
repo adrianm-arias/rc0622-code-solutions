@@ -89,6 +89,7 @@ p {
   font-style: normal;
   font-weight: 200;
   color: #6e6e6e;
+  font-size: 1rem;
 }
 
 button {
@@ -104,13 +105,20 @@ button {
   margin: 1rem 0;
 }
 
-.background-image {
+.background-image-home {
   margin: 4rem 0;
-
-  /* height: 45vh; */
   background-image: url("images/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.background-image-about {
+  height: 50vh;
+  margin: 3rem 0;
+  background-image: url("images/about-us/about-us-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .overlay {
@@ -139,15 +147,14 @@ button {
   padding-bottom: 3rem;
 }
 
-/* .align-left {
-  align-items: center;
-} */
+.padding-left-right {
+  padding: 0 5rem;
+}
 
 /* clinics section */
 
 .column-full {
   width: 100%;
-  color: #6e6e6e;
 }
 
 h2 {
@@ -155,6 +162,11 @@ h2 {
   font-family: "Tiempos Headline", serif;
   font-style: normal;
   font-weight: normal;
+  color: #6e6e6e;
+}
+
+.font-size-med {
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -162,6 +174,12 @@ h3 {
   font-style: normal;
   font-weight: 400;
   color: #6e6e6e;
+}
+
+.team-member {
+  font-family: "Tiempos Headline", serif;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .light-grey-bg {
@@ -186,7 +204,10 @@ h3 {
 
 .flex-box {
   display: flex;
-  justify-content: right;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .small-p {
@@ -212,7 +233,7 @@ h3 {
   font-family: "Tiempos Headline", serif;
   font-style: normal;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 500;
   margin: 1rem 0;
 }
 
@@ -271,4 +292,36 @@ h3 {
 .line-break {
   inline-size: 200px;
   overflow-wrap: break-word;
+}
+
+.blue-p {
+  color: #294464;
+  font-weight: 500;
+}
+
+.round-radius {
+  border-radius: 25rem;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.margin-top-bottom-one {
+  margin: 1rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+.advisory-board-text {
+  font-size: 0.9rem;
+}
+
+/* check this next time */
+.top-line {
+  border-top: 0.8px solid #6e6e6e34;
 }
