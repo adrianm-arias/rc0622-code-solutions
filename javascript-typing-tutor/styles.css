@@ -46,3 +46,9 @@ body {
   text-decoration: underline #bd1e1e;
   text-underline-offset: 1.5rem;
 }
+
+.initial-state {
+  color: black;
+  text-decoration: none;
+  text-underline-offset: 1.5rem;
+}

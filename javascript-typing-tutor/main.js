@@ -11,8 +11,16 @@ document.addEventListener('keydown', function (event) {
   } else {
     $text[i].className = 'wrong-letter';
   }
+  reset();
+});
+
+function reset() {
   if (i > 30) {
     alert('Well Done, Would you like to play again?');
-    location.reload();
+    for (var z = 0; z < $text.length; z++) {
+      $text[z].className = 'initial-state';
+    }
+    i = 0;
+    $text[i].className = 'underline';
   }
-});
+}
