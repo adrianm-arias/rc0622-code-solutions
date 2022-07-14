@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #fbfbff;
+}
+
+.row {
+  width: 100%;
+}
+
+.column-full {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-title {
+  font-family: sans-serif;
+  font-size: 4rem;
+  letter-spacing: 4px;
+  padding-bottom: 3px;
+}
+
+.correct-letter {
+  color: #20bf55;
+
+  /* text-decoration: underline #000;
+  text-underline-offset: 1.5rem; */
+}
+
+.underline {
+  text-decoration: underline #000;
+  text-underline-offset: 1.5rem;
+}
+
+.wrong-letter {
+  color: #bd1e1e;
+  text-decoration: underline #bd1e1e;
+  text-underline-offset: 1.5rem;
+}
+
+.initial-state {
+  color: black;
+  text-decoration: none;
+  text-underline-offset: 1.5rem;
+}
