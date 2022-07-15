@@ -6,9 +6,9 @@
 
 // function truncate(length, string) {
 //   for (var i = 0; i < string.length; i++) {
-//     console.log();
-//     if (string.length > length) {
+//     console.log(string[8]);
+//     // if (string.length > length) {
 
-//     }
+//     // }
 //   }
 // }
