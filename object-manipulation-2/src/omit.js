@@ -1,42 +1,20 @@
 /* exported omit */
+// check index and values of parameter keys
+// check index and values of source
+// check if any keys property equals any source property
+// if yes, do not include matching property in new object
+// if no, then add property and value into new object
 
-// function omit(source, keys) {
-//   var newObject = {};
-//   var keyOne = keys[0];
-//   var keyTwo = keys[1];
-//   // console.log(keyOne);
-//   // console.log(keyTwo);
-//   // var entries = Object.entries(source);
-//   for (var property in source) {
-//     if (keyOne !== property && keyTwo !== property) {
-//       console.log('prop:', property);
-//       console.log('value:', source[property]);
-//       newObject.bar = source[property];
-//     }
-//   }
-//   console.log(newObject);
-// }
+function omit(source, keys) {
+  var newObject = {};
+  for (var prop in source) {
+    if (!keys.includes(prop)) {
+      newObject[prop] = source[prop];
+    }
+  }
+  return newObject;
+}
 
-// function toObject(keyValuePair) {
-//   var newObject = {};
-//   for (let i = 0; i < keyValuePair.length; i++) {
-//     newObject[keyValuePair[0]] = keyValuePair[1];
-//   }
-//   return newObject;
-// }
-
-// function getValues(object) {
-//   var objectArray = [];
-//   for (var property in object) {
-//     objectArray.push(object[property]);
-//   }
-//   return objectArray;
-// }
-
-// function getKeys(object) {
-//   var objectArray = [];
-//   for (var property in object) {
-//     objectArray.push(property);
-//   }
-//   return objectArray;
-// }
+// check source object using for in loop
+// if keys parameter matches source object keys do not include in new object
+// return new object
