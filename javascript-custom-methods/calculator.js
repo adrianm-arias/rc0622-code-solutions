@@ -27,7 +27,7 @@ var calculator = {
     for (var i = 0; i < numbers.length; i++) {
       finalCount += numbers[i];
     }
-    var Average = finalCount / numbers.length;
-    return Average;
+    var average = finalCount / numbers.length;
+    return average;
   }
 };
