@@ -4,9 +4,9 @@ var $heading = document.querySelector('.countdown-display');
 function countdown() {
   var countdown = $heading.textContent--;
   if (countdown === 1) {
-    clearInterval(1);
+    clearInterval(timer);
     $heading.textContent = '~Earth Beeeelooowww Us~';
   }
 }
 
-setInterval(countdown, 1000);
+var timer = setInterval(countdown, 1000);
