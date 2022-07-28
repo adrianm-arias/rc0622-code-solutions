@@ -17,6 +17,7 @@ $rightArrow.addEventListener('click', function (event) {
     counter = 0;
   }
   dots();
+  timerReset();
   return setImg();
 });
 
@@ -27,6 +28,7 @@ $leftArrow.addEventListener('click', function (event) {
     counter = 4;
   }
   dots();
+  timerReset();
   return setImg();
 });
 
@@ -39,8 +41,12 @@ function carousel() {
   dots();
   return setImg();
 }
+var timer = setInterval(carousel, 3000);
 
-setInterval(carousel, 3000);
+function timerReset() {
+  clearInterval(timer);
+  timer = setInterval(carousel, 3000);
+}
 
 var $dotOne = document.getElementById('dot-one');
 var $dotTwo = document.getElementById('dot-two');
@@ -53,25 +59,31 @@ document.addEventListener('click', function (event) {
     if (event.target.id === 'dot-one') {
       counter = 0;
       dots();
+      timerReset();
       return setImg();
     } else if (event.target.id === 'dot-two') {
       counter = 1;
       dots();
+      timerReset();
       return setImg();
     } else if (event.target.id === 'dot-three') {
       counter = 2;
       dots();
+      timerReset();
       return setImg();
     } else if (event.target.id === 'dot-four') {
       counter = 3;
       dots();
+      timerReset();
       return setImg();
     } else if (event.target.id === 'dot-five') {
       counter = 4;
       dots();
+      timerReset();
       return setImg();
     }
   }
+  // timerReset();
 });
 
 function dots() {
