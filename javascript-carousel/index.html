@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row flex-row">
+      <div class="column-one-third flex-row  justify-center align-center">
+        <div class="anchor-wrapper">
+          <i id="left-icon" class="fa-solid fa-angle-left icon"></i>
+        </div>
+      </div>
+      <div class="column-two-thirds">
+        <div class="img-wrapper">
+          <img id="img" src="images/001.png" alt="pokemon">
+        </div>
+      </div>
+      <div class="column-one-third flex-row justify-center align-center">
+        <div class="anchor-wrapper">
+          <i id="right-icon" class="fa-solid fa-angle-right icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row flex-row justify-center">
+      <div class="dots-wrapper">
+        <!-- <i class="fa-solid fa-circle"></i> -->
+        <i id="dot-one" class="dot fa-solid fa-circle"></i>
+        <i id="dot-two" class="dot fa-regular fa-circle"></i>
+        <i id="dot-three" class="dot fa-regular fa-circle"></i>
+        <i id="dot-four" class="dot fa-regular fa-circle"></i>
+        <i id="dot-five" class="dot fa-regular fa-circle"></i>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
