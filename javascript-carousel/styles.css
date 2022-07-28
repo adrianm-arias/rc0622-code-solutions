@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+img {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+.column-two-thirds {
+  width: 80%;
+}
+
+.column-one-third {
+  width: 10%;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.height-ninety {
+  height: 90vh;
+}
+
+.icon {
+  font-size: 4rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.fa-circle {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
