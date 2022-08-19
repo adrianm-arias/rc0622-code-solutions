@@ -1,7 +1,5 @@
 const fs = require('fs');
-
 const readFile = process.argv[2];
-
 const writeFile = process.argv[3];
 
 fs.readFile(readFile, { encoding: 'utf8' }, (err, data) => {
