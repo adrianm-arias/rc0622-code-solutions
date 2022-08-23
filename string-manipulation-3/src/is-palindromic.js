@@ -1,10 +1,11 @@
 /* exported isPalindromic */
-// check and index the string
-// remove spaces from string
-// rewrite the string in reverse to recreate the string
-// if reverse string is equal to original string then true
-// if not not equal then false
-
+/*
+  - removes paces from string
+  - index string
+  - reverse string
+  - write reverse string into new array
+  - compare if original string is equal to new array
+*/
 function isPalindromic(string) {
   const stringSplit = string.split(' ');
   const originalString = stringSplit.join('');
