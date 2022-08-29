@@ -68,12 +68,12 @@ app.put('/api/grades/:gradeId', (req, res) => {
     return;
   } else if (Number.isInteger(score) !== true || score <= 0 || score >= 100) {
     res.status(400).json({
-      error: '\'score\' must be an integer from 0 to 100'
+      error: 'score must be an integer from 0 to 100'
     });
     return;
   } else if (!Number.isInteger(gradeId) || gradeId <= 0) {
     res.status(400).json({
-      error: '"gradeId must be a positive integer'
+      error: 'gradeId must be a positive integer'
     });
     return;
   }
@@ -95,6 +95,39 @@ app.put('/api/grades/:gradeId', (req, res) => {
         });
       } else {
         res.status(200).json(updatedGrade);
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      res.status(500).json({
+        error: 'An unexpected error ocurred.'
+      });
+    });
+});
+
+app.delete('/api/grades/:gradeId', (req, res) => {
+  const gradeId = Number(req.params.gradeId);
+  if (!Number.isInteger(gradeId) || gradeId <= 0) {
+    res.status(400).json({
+      error: 'gradeId must be a positive integer'
+    });
+    return;
+  }
+  const sql = `
+    delete from "grades"
+     where "gradeId" = $1
+     returning *;
+  `;
+  const params = [req.params.gradeId];
+  db.query(sql, params)
+    .then(result => {
+      const deletedGrade = result.rows[0];
+      if (!deletedGrade) {
+        res.status(404).json({
+          error: `Cannot find grade with gradeId ${req.params.gradeId}`
+        });
+      } else {
+        res.status(200).json(deletedGrade);
       }
     })
     .catch(err => {
