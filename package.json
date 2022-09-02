@@ -22,5 +22,17 @@
   },
   "dependencies": {
     "react-dom": "^18.2.0"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianm-arias/rc0622-code-solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianm-arias/rc0622-code-solutions/issues"
+  },
+  "homepage": "https://github.com/adrianm-arias/rc0622-code-solutions#readme"
 }
