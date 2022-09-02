@@ -4,9 +4,7 @@ class ToggleSwitch extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      buttonColor: false,
-      text: false,
-      background: false
+      toggleOn: false
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -14,20 +12,18 @@ class ToggleSwitch extends React.Component {
 
   handleClick() {
     this.setState({
-      buttonColor: !this.state.buttonColor,
-      text: !this.state.text,
-      background: !this.state.background
+      toggleOn: !this.state.toggleOn
     });
   }
 
   render() {
     return (
-      <div className={this.state.background ? 'div-on' : 'div-off'}>
+      <div className={this.state.toggleOn ? 'div-on' : 'div-off'}>
         <button
-          className={`btn ${this.state.buttonColor ? 'btn-on' : 'btn-off'}`}
+          className={`btn ${this.state.toggleOn ? 'btn-on' : 'btn-off'}`}
         onClick={this.handleClick}>
         </button>
-        <p className='text'>{this.state.text ? 'on' : 'off'}</p>
+        <p className='text'>{this.state.toggleOn ? 'on' : 'off'}</p>
       </div>
     );
   }
