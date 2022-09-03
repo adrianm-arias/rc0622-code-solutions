@@ -1,0 +1,24 @@
+.circle {
+  background-color: lightcyan;
+  border-radius: 10rem;
+  height: 150px;
+  width: 150px;
+  border: solid 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  margin: 1rem 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
