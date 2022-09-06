@@ -9,6 +9,7 @@
 
 .bg {
   height: 100vh;
+  transition: 250ms background-color ease-in-out;
 }
 
 .bg-overlay {
@@ -36,15 +37,15 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-.nav {
   padding: 0.5rem 0;
   cursor: pointer;
+  transition: 150ms font-weight ease-in-out;
+  transition: 150ms color ease-in-out;
+}
 
-  /* overflow: hidden; */
-
-  /* transition: 250ms height ease-in-out; */
+.nav-link:hover {
+  color: darkred;
+  font-weight: 600;
 }
 
 .nav-logo {
@@ -52,21 +53,27 @@ ul {
   font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 1em;
   cursor: pointer;
 }
 
-.nav-wrapper {
-  background-color: white;
-  width: 50%;
-  height: 100%;
+nav {
+  width: 0%;
+  transition: 150ms width ease-in-out;
   padding-top: 2rem;
   padding-left: 2rem;
 }
 
+.nav-wrapper {
+  background-color: white;
+  height: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 50%;
+}
+
 .nav-link-wrapper {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .menu-icon {
