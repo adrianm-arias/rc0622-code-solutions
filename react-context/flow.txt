@@ -1,0 +1,19 @@
+User can sign up:
+when the this.state.route.path set to '/#sign-up' which triggers renderPage() function which causes the 'Auth' Page to render.
+Once form is submmited, a POST request is sent to '/sign-up' with the username and hashedpassword.
+After receiving a successful response from the server, the window.location.hash is changed and the user is prompted to sign in.
+
+User can sign in:
+With the this.state.route.path set to '/#sign-in', which triggers renderPage() function which causes the 'Auth' Page to render.
+Once form is submmited, a POST request is sent to the '.../sign-in' URL.
+Middleware then queries the database and returns the query
+Argon2.verify is used to verify the submitted password matches.
+After receiving a successful response from the server, a JSON Web Token is sent back to the client and storage in localStorage
+Finally the state of 'App' is updated.
+
+User can stay signed in:
+when the state is update, componentDidMount is called, which listens for has changes and checks localStorage for the user token.
+If token is found and validated, then state of isAuthorizing is updated.
+
+User can sign out:
+THe user's token is removed from localStorage and state of the 'App' is reset.
